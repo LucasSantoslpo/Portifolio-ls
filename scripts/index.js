@@ -2,6 +2,8 @@ const navbar = document.querySelector('.navbar');
 const mobileNavbar = document.querySelector('.navbar__mobile');
 const button = document.querySelector('.burguer');
 
+app.use(express.static(__dirname + "/public"))
+
 button.addEventListener('click', function () {
   mobileNavbar.classList.toggle('active');
 });
